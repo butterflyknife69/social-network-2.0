@@ -1,0 +1,10 @@
+.nav {
+    width: 200px;
+    text-align: center;
+    background-color: #ffffff;
+    grid-area: n;
+}
+
+.item {
+    padding: 62px 10px 62px 10px;
+}
