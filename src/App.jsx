@@ -5,8 +5,8 @@ import Navbar from './components/Navbar/Navbar';
 import Profile from './components/Profile/Profile';
 import News from './components/News/News'
 import Settings from './components/Settings/Settings'
-import Dialogs from './components/Dialogs/Dialogs'
-import Video from './components/Video/Video'
+import Dialogs from './components/Dialogs/Dialogs';
+import Video from './components/Video/Video';
 
 
 
