@@ -1,6 +1,6 @@
 import s from "./Dialogs.module.css"
 
-const Dialogs = () => {
+const Dialogs = (props) => {
     return (
         <div className={s.dialogs}>Hello</div>
     )

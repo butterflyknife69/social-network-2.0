@@ -12,9 +12,8 @@ const MyPosts = (props) => {
                 <button>Add Post</button>
             </div>
             <div className={s.posts}>
-                <Post />
-                <Post />
-                <Post />
+                <Post message={'Hi my name Ihor'} likesCount={5}/>
+                <Post message={'Im, profesional coder'}likesCount={14}/>
             </div>
         </div>
     )

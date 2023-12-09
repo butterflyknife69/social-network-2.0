@@ -6,9 +6,9 @@ const Post = (props) => {
     return (
         <div className={s.item}>
             <img className={s.postImg} src="https://www.pngall.com/wp-content/uploads/12/Avatar-PNG-Photo.png" alt="img" />
-            Post1
-            <div className={s.like}>
-                <span> Like</span>
+            {props.message}
+            <div className={s.likesCount}>
+                <span>Likes:</span> {props.likesCount} 
             </div>
         </div>
     )
