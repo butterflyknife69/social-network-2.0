@@ -1,8 +1,10 @@
-.myPosts{
-    margin-top: 40px;
-    margin-left: -80px;
-    color: #8793a3;
-  }
-.posts{
+.myPosts {
+  margin-top: 40px;
+  margin-left: 0;
+  color: #8793a3;
+  padding: 20px;
+}
 
+.posts {
+  margin: 0;
 }

@@ -7,6 +7,7 @@ import News from './components/News/News'
 import Settings from './components/Settings/Settings'
 import Dialogs from './components/Dialogs/Dialogs';
 import Video from './components/Video/Video';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 
 
@@ -15,14 +16,20 @@ const App = () => {
     <div className="app-wraper">
       <Header />
       <Navbar />
-      <Profile />
-      <Dialogs/>
-      <News />
-      <Music />
-      <Video/>
-      <Settings />
+      <div className='appWrapperContent'>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/dialogs" element={<Dialogs />} />
+            <Route path="/news" element={<News />} />
+            <Route path="/music" element={<Music />} />
+            <Route path="/video" element={<Video />} />
+            <Route path="/settings" element={<Settings />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
     </div>
-  )
+  );
 }
 
 export default App;

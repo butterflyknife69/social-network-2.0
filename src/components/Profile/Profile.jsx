@@ -7,7 +7,7 @@ import s from "./Profile.module.css"
 
 const Profile = (props) => {
     return (
-        <div className={s.content}>
+        <div className={s.wraper}>
             <Wallper />
             <AvaInfo />
             <MyPosts />
