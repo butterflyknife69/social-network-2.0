@@ -7,11 +7,12 @@
 
 .item {
     padding: 62px 10px 62px 10px;
-}
-.item.active a{
-    color: gold;
-}
-.item a{
     color: #8793a3;
     text-decoration: none;
 }
+
+.active {
+    color: gold;
+    text-decoration: none;
+} 
+

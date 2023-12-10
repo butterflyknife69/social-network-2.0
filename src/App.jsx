@@ -13,11 +13,11 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 const App = () => {
   return (
-    <div className="app-wraper">
-      <Header />
-      <Navbar />
-      <div className='appWrapperContent'>
-        <BrowserRouter>
+    <BrowserRouter>
+      <div className="app-wraper">
+        <Header />
+        <Navbar />
+        <div className='appWrapperContent'>
           <Routes>
             <Route path="/profile" element={<Profile />} />
             <Route path="/dialogs" element={<Dialogs />} />
@@ -26,9 +26,9 @@ const App = () => {
             <Route path="/video" element={<Video />} />
             <Route path="/settings" element={<Settings />} />
           </Routes>
-        </BrowserRouter>
+        </div>
       </div>
-    </div>
+    </BrowserRouter>
   );
 }
 
