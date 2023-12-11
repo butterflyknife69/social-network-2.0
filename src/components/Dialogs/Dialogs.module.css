@@ -9,31 +9,19 @@
     justify-content: space-evenly;
 }
 
+
 .dialogsItems {
     margin-left: 20px;
     padding: 10px;
     
 }
-
-.dialog {
-    padding: 10px;
-    text-decoration: none;
-}
-
 .messages {
     margin-left: 60px;
     padding: 10px;
     color: #8793a3;
 }
 
-.message {
+.sms {
     padding: 10px;
 }
 
-.active  {
-    color: gold;
-}
-.dialog a{
-    color: black;
-    text-decoration: none;
-}
