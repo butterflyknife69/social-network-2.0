@@ -34,13 +34,22 @@ let state = {
 
 
 
-
-export let addPost=(postMessage)=>{
-  let newPost={ id: 4, message: postMessage, likesCount: 0 }
+// Profile
+export let addPost=()=>{
+  let newPost={ id: 4, message: state.profilePage.newPostText, likesCount: 0 }
   state.profilePage.posts.push(newPost)
+  state.profilePage.newPostText=''
   rerenderEntireTree(state)
 }
 
+export let updateNewPostText=(newText)=>{
+  state.profilePage.newPostText=newText
+  rerenderEntireTree(state)
+}
+
+
+
+// Dialog
 export let sendMessage=(messageText)=>{
   let dialogMessage={ id: 7, message:messageText }
   state.dialogsPage.messages.push(dialogMessage)
