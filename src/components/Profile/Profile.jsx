@@ -10,7 +10,7 @@ const Profile = (props) => {
         <div className={s.wraper}>
             <Wallper />
             <AvaInfo />
-            <MyPosts state={props.state}/>
+            <MyPosts posts={props.state.posts}/>
         </div>
     )
 }
