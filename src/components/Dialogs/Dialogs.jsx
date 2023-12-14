@@ -9,12 +9,14 @@ console.log(props);
     let messagesElements = props.dialogsPage.messages.map(m => <Message message={m.message} id={m.id} />);
 
     let newMessageElement = React.createRef();
+
     let sendMessage = () => {
-        props.sendMessage()
+        props.dispatch({type:'SEND-MESSAGE'})
+        
     }
     let onMessageChange = () => {
-        let text = newMessageElement.current.value;
-        props.updateNewMessageText(text)
+        let newMessage = newMessageElement.current.value;
+        props.dispatch({type:'UPDATE-NEW-MESSAGE-TEXT',newMessage:newMessage })
     }
     return (
         <div className={s.wraper}>
