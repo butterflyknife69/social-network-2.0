@@ -2,6 +2,10 @@ import DialogItem from "./DialogItem/DialogItem";
 import Message from "./Message/Message";
 import s from "./Dialogs.module.css"
 import React from "react";
+import { sendMessageAC, updateNewMESSAGETextAC } from "../../redux/store";
+
+
+
 
 const Dialogs = (props) => {
 console.log(props);
@@ -11,12 +15,12 @@ console.log(props);
     let newMessageElement = React.createRef();
 
     let sendMessage = () => {
-        props.dispatch({type:'SEND-MESSAGE'})
+        props.dispatch(sendMessageAC())
         
     }
     let onMessageChange = () => {
         let newMessage = newMessageElement.current.value;
-        props.dispatch({type:'UPDATE-NEW-MESSAGE-TEXT',newMessage:newMessage })
+        props.dispatch(updateNewMESSAGETextAC(newMessage))
     }
     return (
         <div className={s.wraper}>

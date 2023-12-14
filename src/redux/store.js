@@ -63,5 +63,17 @@ let store = {
   }
 }
 
+// ProfileAC
+export const addPostActionCreator = () => ({ type: 'ADD-POST' })
+export const updateNewPostTextActionCreator = (text) =>
+  ({ type: 'UPDATE-NEW-POST-TEXT', newText: text })
+
+// DialogsAC
+export const sendMessageAC = () => ({ type: 'SEND-MESSAGE' })
+export const updateNewMESSAGETextAC = (newMessage) =>
+  ({ type: 'UPDATE-NEW-MESSAGE-TEXT', newMessage: newMessage })
+
+
+
 
 export default store;
