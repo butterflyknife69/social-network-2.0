@@ -10,7 +10,7 @@ const Profile = (props) => {
         <div className={s.wraper}>
             <Wallper />
             <AvaInfo />
-            <MyPostsContainer store={props.store} />
+            <MyPostsContainer />
         </div>
     )
 }
