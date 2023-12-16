@@ -1,7 +1,7 @@
 import AvaInfo from "./AvaInfo/AvaInfo";
 import Wallper from "./Wallper/Wallper";
-import MyPosts from "./MyPosts/MyPosts";
 import s from "./Profile.module.css"
+import MyPostsContainer from "./MyPosts/MyPostsContainer";
 
 
 
@@ -10,9 +10,7 @@ const Profile = (props) => {
         <div className={s.wraper}>
             <Wallper />
             <AvaInfo />
-            <MyPosts posts={props.profilePage.posts}
-                newPostText={props.profilePage.newPostText}
-                dispatch={props.dispatch} />
+            <MyPostsContainer store={props.store} />
         </div>
     )
 }

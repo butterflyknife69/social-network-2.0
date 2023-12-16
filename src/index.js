@@ -15,6 +15,7 @@ let rerenderEntireTree = (state) => {
         <React.StrictMode>
             <BrowserRouter>
                 <App state={state}
+                    store={store}
                     dispatch={store.dispatch.bind(store)} />
             </BrowserRouter>
         </React.StrictMode>
@@ -23,8 +24,8 @@ let rerenderEntireTree = (state) => {
 
 
 rerenderEntireTree(store.getState())
-let state=store.getState()
-store.subscribe(()=>{rerenderEntireTree(state)})
+let state = store.getState()
+store.subscribe(() => { rerenderEntireTree(state) })
 
 
 // If you want to start measuring performance in your app, pass a function
