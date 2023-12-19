@@ -1,9 +1,5 @@
 let initialState = {
-    users: [
-        { id: 1, photoUrl: 'https://www.pngall.com/wp-content/uploads/12/Avatar-PNG-Photo.png', fullName: 'Dmitriy K', followed: false, status: 'Im boos', location: { city: 'Minsk', country: 'Belarus' } },
-        { id: 2, photoUrl: 'https://www.pngall.com/wp-content/uploads/12/Avatar-PNG-Photo.png', fullName: 'Sasha', followed: true, status: 'Im boos', location: { city: 'Kiev', country: 'Ukraine' } },
-        { id: 3, photoUrl: 'https://www.pngall.com/wp-content/uploads/12/Avatar-PNG-Photo.png', fullName: 'Andrew', followed: false, status: 'Im boos', location: { city: 'Krakov', country: 'Poland' } }
-    ]
+    users: []
 }
 
 const usersReducer = (state = initialState, action) => {
