@@ -7,6 +7,7 @@ const Navbar = (props) => {
         <nav className={s.nav}>
             <div className={s.item} > <NavLink to="/profile" className={activeClassName}>Profile</NavLink> </div>
             <div className={s.item} > <NavLink to="/dialogs" className={activeClassName}>Dialogs</NavLink> </div>
+            <div className={s.item} > <NavLink to="/users" className={activeClassName}>Users</NavLink> </div>
             <div className={s.item} > <NavLink to="/news" className={activeClassName}>News</NavLink> </div>
             <div className={s.item} > <NavLink to="/music" className={activeClassName}>Music</NavLink> </div>
             <div className={s.item} > <NavLink to="/video" className={activeClassName}>Video</NavLink> </div>
