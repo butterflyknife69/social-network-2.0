@@ -1,0 +1,45 @@
+/* Music.module.css */
+
+.music {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .pageHeader {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .musicContent {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .songList {
+    flex: 1;
+  }
+  
+  .songList h3 {
+    color: #333;
+  }
+  
+  .songList ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .songList li {
+    margin-bottom: 10px;
+  }
+  
+  .audioPlayer {
+    flex: 1;
+  }
+  
+  /* Додайте стилі для вашого аудіоплеєра тут */
+  
