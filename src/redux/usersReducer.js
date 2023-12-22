@@ -1,8 +1,8 @@
 let initialState = {
     users: [],
-    pageSize:5,
-    totalUsersCount:19,
-    currentPage:1
+    pageSize: 5,
+    totalUsersCount: 0,
+    currentPage: 2
 }
 
 const usersReducer = (state = initialState, action) => {
@@ -28,7 +28,11 @@ const usersReducer = (state = initialState, action) => {
                 })
             }
         case 'SETUSERS':
-            return { ...state, users: [...state.users, ...action.users] }
+            return { ...state, users: action.users }
+        case 'SETCURENTPAGE':
+            return { ...state, currentPage: action.currentPage }
+        case 'SETTOTALUSERSCOUNT':
+            return { ...state, totalUsersCount: action.totalUsersCount }
         default:
             return state
     }
@@ -38,5 +42,6 @@ const usersReducer = (state = initialState, action) => {
 export const followAC = (userId) => ({ type: 'FOLLOW', userId })
 export const unfollowAC = (userId) => ({ type: 'UNFOLLOW', userId })
 export const setUsersAC = (users) => ({ type: 'SETUSERS', users })
-
+export const setCurrentPageAC = (currentPage) => ({ type: 'SETCURENTPAGE', currentPage })
+export const setTotalUsersCountAC = (totalUsersCount) => ({ type: 'SETTOTALUSERSCOUNT', totalUsersCount })
 export default usersReducer;

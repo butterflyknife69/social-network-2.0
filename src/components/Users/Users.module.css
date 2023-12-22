@@ -10,6 +10,9 @@
     margin-top: 10px;
     margin-bottom: 20px;
 }
-.selectedPAge{
+.selectedPage{
     font-weight: bold;
+}
+.numPage{
+    cursor: pointer;
 }
