@@ -8,7 +8,6 @@ let initialState = {
     newPostText: 'Kamasutra'
 }
 const profileReducer = (state = initialState, action) => {
-
     switch (action.type) {
         case 'ADD-POST':
             return {
@@ -23,16 +22,10 @@ const profileReducer = (state = initialState, action) => {
             }
         default:
             return state
-
     }
-
 }
-
 // ProfileAC
-export const addPostActionCreator = () => ({ type: 'ADD-POST' })
-export const updateNewPostTextActionCreator = (text) =>
-    ({ type: 'UPDATE-NEW-POST-TEXT', newText: text })
-
-
+export const addPost = () => ({ type: 'ADD-POST' })
+export const updateNewPostText = (text) => ({ type: 'UPDATE-NEW-POST-TEXT', newText: text })
 
 export default profileReducer;
