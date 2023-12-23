@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import { followAC, setCurrentPageAC, setTotalUsersCountAC, setUsersAC, toggleIsFetchingAC, unfollowAC } from "../../redux/usersReducer";
 import Users from './Users';
 import preloader from '../../assets/imges/preloader.svg'
+import Preloader from "../common/Preloader";
  
 class UsersContainer extends React.Component {
 
@@ -27,7 +28,9 @@ class UsersContainer extends React.Component {
     }
     render() {
         return <>
-            {this.props.isFetching ? <img  src={preloader}/> : null}
+            {this.props.isFetching 
+            ? <Preloader/> 
+            : null}
             <Users
                 totalUsersCount={this.props.totalUsersCount}
                 pageSize={this.props.pageSize}
