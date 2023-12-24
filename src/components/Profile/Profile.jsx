@@ -9,7 +9,7 @@ const Profile = (props) => {
     return (
         <div className={s.wraper}>
             <Wallper />
-            <AvaInfo />
+            <AvaInfo profile={props.profile} />
             <MyPostsContainer />
         </div>
     )
