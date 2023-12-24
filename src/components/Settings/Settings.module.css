@@ -1,0 +1,36 @@
+/* Settings.module.css */
+
+.settings {
+    padding: 20px;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.settingsContent {
+    /* Стилі для блоку з налаштуваннями */
+}
+
+.settingSection {
+    margin-bottom: 20px;
+}
+
+.sectionTitle {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.settingItem {
+    margin-bottom: 10px;
+}
+
+/* Додайте інші стилі, які вам потрібні для адаптивності */
+@media (max-width: 768px) {
+    .settings {
+        padding: 10px;
+    }
+
+    /* Додайте інші стилі для адаптивності тут */
+}
