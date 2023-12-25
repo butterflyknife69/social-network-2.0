@@ -1,9 +1,8 @@
-
 import Preloader from "../../common/Preloader";
-import s from "./AvaInfo.module.css"
+import s from "./ProfileInfo.module.css"
 
 
-const AvaInfo = (props) => {
+const ProfileInfo = (props) => {
     if (!props.profile) {
         return <Preloader />
     }
@@ -16,4 +15,4 @@ const AvaInfo = (props) => {
     )
 }
 
-export default AvaInfo;
+export default ProfileInfo;
