@@ -9,3 +9,12 @@
     padding: 5px 0 5px 75px;
     width: 50px;
 }
+.loginBlock{
+    float: right;
+    margin-right: 30px;
+    padding: 15px;
+}
+.loginBlock a{
+    color: white;
+    text-decoration: none;
+}
