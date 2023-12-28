@@ -1,14 +1,12 @@
 .wraperImgBloc {
     margin: 0 auto;
-    width: 100%;
-    height: 100%;
     max-width: 1184px;
     max-height: 300px;   
 }
-
-.wallper {
-    padding-top: 30px;
+.wallper{
+    padding-top: 32px;
 }
+
 
 .img_content {
     width: 100%;
