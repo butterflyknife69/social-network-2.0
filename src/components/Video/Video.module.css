@@ -1,5 +1,5 @@
-.video {
-  max-width: 480px; /* Змінено максимальну ширину блоку відео */
+/* .video {
+  max-width: 480px; 
   height: 100%;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -10,11 +10,11 @@
 
 .videoWrapper {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
+  padding-bottom: 56.25%; 
   height: 0;
 }
 
-/* Змінено стилі iframe для відображення в зменшеному розмірі */
+
 .videoWrapper iframe {
   position: absolute;
   width: 100%;
@@ -56,4 +56,56 @@
 .authorName {
   font-size: 14px;
   font-weight: 600;
+} */
+/* Video.module.css */
+
+.video {
+  display: flex;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.videoWrapper {
+  width: 480px;
+  height: 270px;
+  overflow: hidden;
+}
+
+.videoFrame {
+  width: 100%;
+  height: 100%;
+}
+
+.videoInfo {
+  padding: 15px;
+}
+
+.videoTitle {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.videoDetails {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.views,
+.timestamp {
+  margin-right: 5px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+}
+
+.authorAvatar {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.authorName {
+  font-weight: bold;
 }
