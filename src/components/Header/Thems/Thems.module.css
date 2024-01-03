@@ -1,0 +1,22 @@
+.swichDark {
+    margin-left: 30px;
+}
+
+.swichDark button {
+
+    padding: 5px;
+    background-color: #23d2e2;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-size: 1em;
+    outline: none;
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.swichDark button:hover {
+    background: rgb(45, 50, 102);
+}
